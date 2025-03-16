@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParentPlus - Affordable Childcare Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="childcare-styles.css">
+</head>
+<body>
+    <!-- Reuse the same navbar for consistency -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo">ParentPlus</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="childcare.html" class="active">Childcare Finder</a>
+                <a href="#resources">Resources</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="search-section">
+        <div class="section-container">
+            <h1>Find Affordable Childcare Near You</h1>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="location" placeholder="Enter your zip code" class="search-input">
+                    <button id="search-btn" class="search-button">Search</button>
+                </div>
+                <div class="filters">
+                    <select id="price-range">
+                        <option value="">Price Range</option>
+                        <option value="low">$0-$200/week</option>
+                        <option value="medium">$201-$400/week</option>
+                        <option value="high">$401+/week</option>
+                    </select>
+                    <select id="age-range">
+                        <option value="">Child's Age</option>
+                        <option value="infant">Infant (0-1)</option>
+                        <option value="toddler">Toddler (1-3)</option>
+                        <option value="preschool">Preschool (3-5)</option>
+                        <option value="school-age">School Age (5+)</option>
+                    </select>
+                    <select id="service-type">
+                        <option value="">Service Type</option>
+                        <option value="daycare">Daycare Center</option>
+                        <option value="home">In-Home Care</option>
+                        <option value="preschool">Preschool</option>
+                        <option value="afterschool">After School Care</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="section-container">
+            <div class="results-grid" id="results">
+                <!-- Results will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <script src="childcare.js"></script>
+</body>
+</html>
