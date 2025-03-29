@@ -1,0 +1,76 @@
+/* Reuse your signup color scheme */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Disable scrollbars globally */
+    background-color: #BF7474;
+  }
+  
+  #root {
+    height: 100vh;
+    overflow: auto; /* Allow scrolling only if content exceeds viewport */
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Login.css */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 100vh;
+    max-width: 400px;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    padding: 3rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+    /* For extra centering insurance */
+    margin: 0 ;
+     
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #BF7474;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 1rem 0;
+    color: #666;
+  }
